@@ -32,7 +32,8 @@
     },
     {
       "name": "MaslowArmInDiameter",
-      "ioValue": 10
+      "ioValue": 10,
+      "currentEquation": "10"
     },
     {
       "name": "MaslowArmOutDiameter",
@@ -1414,8 +1415,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.07551240560949299,
-      "y": 0.7852193995381063,
+      "x": 0.07713052858683926,
+      "y": 0.7644341801385681,
       "uniqueID": "id-14456",
       "ioValues": [
         {
