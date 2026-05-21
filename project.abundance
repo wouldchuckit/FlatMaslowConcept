@@ -1118,8 +1118,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.22707659115426104,
-      "y": 0.2817551963048499,
+      "x": 0.06796116504854369,
+      "y": 0.16166281755196305,
       "uniqueID": "id-14377",
       "ioValues": [
         {
@@ -1131,8 +1131,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.28371089536138083,
-      "y": 0.2840646651270208,
+      "x": 0.2529665587918015,
+      "y": 0.16166281755196305,
       "uniqueID": "id-14380",
       "ioValues": [
         {
@@ -1145,12 +1145,142 @@
           "currentEquation": "MatThick"
         }
       ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.0738942826321467,
+      "y": 0.3302540415704388,
+      "uniqueID": "id-14387",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 570,
+          "currentEquation": "2 * CenterToArmRadius + MaslowArmOutDiameter - 2 * RimWidth"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.16235167206040993,
+      "y": 0.26096997690531176,
+      "uniqueID": "id-14390",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.20658036677454153,
+      "y": 0.2909930715935335,
+      "uniqueID": "id-14394",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 2,
+          "currentEquation": "MatThick"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.25026968716289105,
+      "y": 0.29330254041570436,
+      "uniqueID": "id-14398",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 2,
+          "currentEquation": "MatThick"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.07982740021574973,
+      "y": 0.47344110854503463,
+      "uniqueID": "id-14404",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 200,
+          "currentEquation": "ToolBayDiameter"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.15102481121898598,
+      "y": 0.13625866050808313,
+      "uniqueID": "id-14407",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "geometry",
+      "ap2Name": "retain",
       "ap1ID": "id-14377",
+      "ap2ID": "id-14407"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-14377",
+      "ap2ID": "id-14390"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-14387",
+      "ap2ID": "id-14390"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-14390",
+      "ap2ID": "id-14394"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-14394",
+      "ap2ID": "id-14398"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-14404",
+      "ap2ID": "id-14407"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-14407",
       "ap2ID": "id-14380"
     }
   ],
