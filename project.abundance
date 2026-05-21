@@ -94,8 +94,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.44768069039913705,
-      "y": 0.8937644341801385,
+      "x": 0.42880258899676377,
+      "y": 0.9330254041570438,
       "uniqueID": "id-14075",
       "name": "MaslowRoughArmModel",
       "ioValues": [
@@ -1490,8 +1490,8 @@
     },
     {
       "atomType": "ShrinkWrap",
-      "x": 0.20981661272923408,
-      "y": 0.930715935334873,
+      "x": 0.2017259978425027,
+      "y": 0.9214780600461893,
       "uniqueID": "id-14478",
       "name": "Shrink Wrap",
       "ioValues": [
@@ -1569,8 +1569,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.2750809061488673,
-      "y": 0.9214780600461893,
+      "x": 0.24919093851132684,
+      "y": 0.9260969976905312,
       "uniqueID": "id-14483",
       "ioValues": [
         {
@@ -1585,8 +1585,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.3333333333333333,
-      "y": 0.9145496535796767,
+      "x": 0.3036677454153182,
+      "y": 0.9099307159353348,
       "uniqueID": "id-14487",
       "ioValues": [
         {
@@ -1602,8 +1602,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5188781014023732,
-      "y": 0.8822170900692841,
+      "x": 0.5048543689320388,
+      "y": 0.9122401847575057,
       "uniqueID": "id-14494",
       "ioValues": [
         {
@@ -1612,8 +1612,66 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "CenterToArmDiameter"
+          "ioValue": 300,
+          "currentEquation": "CenterToArmRadius"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 2,
+          "currentEquation": "MatThick"
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.5711974110032362,
+      "y": 0.789838337182448,
+      "uniqueID": "id-14500",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.19741100323624594,
+      "y": 0.7967667436489608,
+      "uniqueID": "id-14505",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 22,
+          "currentEquation": "MaslowArmHeight"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.255663430420712,
+      "y": 0.7852193995381063,
+      "uniqueID": "id-14509",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
         },
         {
           "name": "yDist",
@@ -1753,6 +1811,11 @@
       "ap2ID": "id-14472"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-14466",
+      "ap2ID": "id-14505"
+    },
+    {
       "ap2Name": "Shape 2",
       "ap1ID": "id-14472",
       "ap2ID": "id-14478"
@@ -1766,6 +1829,21 @@
       "ap2Name": "geometry",
       "ap1ID": "id-14483",
       "ap2ID": "id-14487"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-14487",
+      "ap2ID": "id-14500"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-14494",
+      "ap2ID": "id-14500"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-14505",
+      "ap2ID": "id-14509"
     }
   ],
   "unitsKey": "MM",
