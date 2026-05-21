@@ -9,6 +9,8 @@
 - **MatThick** (number)
 - **ToolBayDiameter** (number)
 - **CenterRingThick** (number)
+- **CenterToArmRadius** (number)
+- **RimThickness** (number)
 
 
 

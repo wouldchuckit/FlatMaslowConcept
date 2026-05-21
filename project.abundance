@@ -17,6 +17,14 @@
     {
       "name": "CenterRingThick",
       "ioValue": 10
+    },
+    {
+      "name": "CenterToArmRadius",
+      "ioValue": 10
+    },
+    {
+      "name": "RimThickness",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -1049,6 +1057,20 @@
       "y": 0.22,
       "uniqueID": "id-14212",
       "name": "CenterRingThick"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.28,
+      "uniqueID": "id-14215",
+      "name": "CenterToArmRadius"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.34,
+      "uniqueID": "id-14218",
+      "name": "RimThickness"
     }
   ],
   "allConnectors": [],
