@@ -7,6 +7,8 @@
 ## Inputs
 
 - **MatThick** (number)
+- **ToolBayDiameter** (number)
+- **CenterRingThick** (number)
 
 
 

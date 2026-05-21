@@ -9,6 +9,14 @@
       "name": "MatThick",
       "ioValue": 2,
       "currentEquation": "2"
+    },
+    {
+      "name": "ToolBayDiameter",
+      "ioValue": 10
+    },
+    {
+      "name": "CenterRingThick",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -1027,6 +1035,20 @@
       "y": 0.1,
       "uniqueID": "id-14206",
       "name": "MatThick"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.16,
+      "uniqueID": "id-14209",
+      "name": "ToolBayDiameter"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.22,
+      "uniqueID": "id-14212",
+      "name": "CenterRingThick"
     }
   ],
   "allConnectors": [],
