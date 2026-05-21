@@ -7,23 +7,35 @@
   "ioValues": [
     {
       "name": "MatThick",
-      "ioValue": 2,
-      "currentEquation": "2"
+      "ioValue": 2
     },
     {
       "name": "ToolBayDiameter",
-      "ioValue": 10
+      "ioValue": 200
     },
     {
       "name": "CenterRingThick",
-      "ioValue": 10
+      "ioValue": 20
     },
     {
       "name": "CenterToArmRadius",
+      "ioValue": 300
+    },
+    {
+      "name": "RimWidth",
+      "ioValue": 20
+    },
+    {
+      "name": "CapAndBaseWidth",
+      "ioValue": 40,
+      "currentEquation": "40"
+    },
+    {
+      "name": "MaslowArmInDiameter",
       "ioValue": 10
     },
     {
-      "name": "RimThickness",
+      "name": "MaslowArmOutDiameter",
       "ioValue": 10
     }
   ],
@@ -42,9 +54,44 @@
       ]
     },
     {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.1,
+      "uniqueID": "id-14206",
+      "name": "MatThick"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.16,
+      "uniqueID": "id-14209",
+      "name": "ToolBayDiameter"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.22,
+      "uniqueID": "id-14212",
+      "name": "CenterRingThick"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.28,
+      "uniqueID": "id-14215",
+      "name": "CenterToArmRadius"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.34,
+      "uniqueID": "id-14218",
+      "name": "RimWidth"
+    },
+    {
       "atomType": "GitHubMolecule",
-      "x": 0.5967871485943775,
-      "y": 0.21939953810623555,
+      "x": 0.4973031283710896,
+      "y": 0.21709006928406466,
       "uniqueID": "id-14075",
       "name": "MaslowRoughArmModel",
       "ioValues": [
@@ -1040,37 +1087,23 @@
     {
       "atomType": "Input",
       "x": 0.0165,
-      "y": 0.1,
-      "uniqueID": "id-14206",
-      "name": "MatThick"
+      "y": 0.4,
+      "uniqueID": "id-14362",
+      "name": "CapAndBaseWidth"
     },
     {
       "atomType": "Input",
       "x": 0.0165,
-      "y": 0.16,
-      "uniqueID": "id-14209",
-      "name": "ToolBayDiameter"
+      "y": 0.46,
+      "uniqueID": "id-14365",
+      "name": "MaslowArmInDiameter"
     },
     {
       "atomType": "Input",
       "x": 0.0165,
-      "y": 0.22,
-      "uniqueID": "id-14212",
-      "name": "CenterRingThick"
-    },
-    {
-      "atomType": "Input",
-      "x": 0.0165,
-      "y": 0.28,
-      "uniqueID": "id-14215",
-      "name": "CenterToArmRadius"
-    },
-    {
-      "atomType": "Input",
-      "x": 0.0165,
-      "y": 0.34,
-      "uniqueID": "id-14218",
-      "name": "RimThickness"
+      "y": 0.52,
+      "uniqueID": "id-14368",
+      "name": "MaslowArmOutDiameter"
     }
   ],
   "allConnectors": [],
