@@ -32,16 +32,15 @@
     },
     {
       "name": "MaslowArmInDiameter",
-      "ioValue": 10,
-      "currentEquation": "10"
+      "ioValue": 69
     },
     {
       "name": "MaslowArmOutDiameter",
-      "ioValue": 10
+      "ioValue": 124
     },
     {
       "name": "MaslowArmHeight",
-      "ioValue": 10
+      "ioValue": 22
     }
   ],
   "topLevel": true,
@@ -1125,7 +1124,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 610,
+          "ioValue": 724,
           "currentEquation": "2 * CenterToArmRadius + MaslowArmOutDiameter"
         }
       ]
@@ -1155,7 +1154,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 570,
+          "ioValue": 684,
           "currentEquation": "2 * CenterToArmRadius + MaslowArmOutDiameter - 2 * RimWidth"
         }
       ]
@@ -1415,14 +1414,51 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.07713052858683926,
-      "y": 0.7644341801385681,
+      "x": 0.07659115426105717,
+      "y": 0.7806004618937644,
       "uniqueID": "id-14456",
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 10,
+          "ioValue": 69,
           "currentEquation": "MaslowArmInDiameter"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.07605177993527508,
+      "y": 0.8937644341801385,
+      "uniqueID": "id-14459",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 124,
+          "currentEquation": "MaslowArmOutDiameter"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.1558791801510248,
+      "y": 0.7967667436489608,
+      "uniqueID": "id-14466",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
         }
       ]
     }
