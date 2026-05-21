@@ -14,7 +14,7 @@
       "ioValue": 200
     },
     {
-      "name": "CenterRingThick",
+      "name": "CenterRingWidth",
       "ioValue": 20
     },
     {
@@ -76,7 +76,7 @@
       "x": 0.0165,
       "y": 0.22,
       "uniqueID": "id-14212",
-      "name": "CenterRingThick"
+      "name": "CenterRingWidth"
     },
     {
       "atomType": "Input",
@@ -1118,7 +1118,7 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.06796116504854369,
+      "x": 0.08090614886731393,
       "y": 0.16166281755196305,
       "uniqueID": "id-14377",
       "ioValues": [
@@ -1131,8 +1131,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.2529665587918015,
-      "y": 0.16166281755196305,
+      "x": 0.2508090614886731,
+      "y": 0.14318706697459585,
       "uniqueID": "id-14380",
       "ioValues": [
         {
@@ -1148,8 +1148,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.0738942826321467,
-      "y": 0.3302540415704388,
+      "x": 0.08090614886731393,
+      "y": 0.2863741339491917,
       "uniqueID": "id-14387",
       "ioValues": [
         {
@@ -1161,8 +1161,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.16235167206040993,
-      "y": 0.26096997690531176,
+      "x": 0.15695792880258902,
+      "y": 0.26558891454965355,
       "uniqueID": "id-14390",
       "ioValues": [
         {
@@ -1177,8 +1177,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.20658036677454153,
-      "y": 0.2909930715935335,
+      "x": 0.2017259978425027,
+      "y": 0.2678983833718245,
       "uniqueID": "id-14394",
       "ioValues": [
         {
@@ -1195,7 +1195,7 @@
     {
       "atomType": "Move",
       "x": 0.25026968716289105,
-      "y": 0.29330254041570436,
+      "y": 0.2632794457274827,
       "uniqueID": "id-14398",
       "ioValues": [
         {
@@ -1219,8 +1219,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.07982740021574973,
-      "y": 0.47344110854503463,
+      "x": 0.08144552319309602,
+      "y": 0.41108545034642036,
       "uniqueID": "id-14404",
       "ioValues": [
         {
@@ -1232,9 +1232,67 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.15102481121898598,
-      "y": 0.13625866050808313,
+      "x": 0.16073354908306364,
+      "y": 0.14087759815242495,
       "uniqueID": "id-14407",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.07928802588996764,
+      "y": 0.5288683602771362,
+      "uniqueID": "id-14411",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 280,
+          "currentEquation": "ToolBayDiameter + 2 * CapAndBaseWidth"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.15480043149946063,
+      "y": 0.5103926096997691,
+      "uniqueID": "id-14414",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.07713052858683926,
+      "y": 0.6535796766743649,
+      "uniqueID": "id-14418",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 240,
+          "currentEquation": "ToolBayDiameter + 2 * CenterRingWidth"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.15426105717367852,
+      "y": 0.6466512702078522,
+      "uniqueID": "id-14421",
       "ioValues": [
         {
           "name": "retain",
@@ -1279,9 +1337,29 @@
       "ap2ID": "id-14407"
     },
     {
+      "ap2Name": "remove",
+      "ap1ID": "id-14404",
+      "ap2ID": "id-14414"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-14404",
+      "ap2ID": "id-14421"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-14407",
       "ap2ID": "id-14380"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-14411",
+      "ap2ID": "id-14414"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-14418",
+      "ap2ID": "id-14421"
     }
   ],
   "unitsKey": "MM",

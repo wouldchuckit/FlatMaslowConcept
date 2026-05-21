@@ -8,7 +8,7 @@
 
 - **MatThick** (number)
 - **ToolBayDiameter** (number)
-- **CenterRingThick** (number)
+- **CenterRingWidth** (number)
 - **CenterToArmRadius** (number)
 - **RimWidth** (number)
 - **CapAndBaseWidth** (number)
