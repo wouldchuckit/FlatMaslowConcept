@@ -14,6 +14,7 @@
 - **CapAndBaseWidth** (number)
 - **MaslowArmInDiameter** (number)
 - **MaslowArmOutDiameter** (number)
+- **MaslowArmHeight** (number)
 
 
 

@@ -37,6 +37,10 @@
     {
       "name": "MaslowArmOutDiameter",
       "ioValue": 10
+    },
+    {
+      "name": "MaslowArmHeight",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -1104,9 +1108,52 @@
       "y": 0.52,
       "uniqueID": "id-14368",
       "name": "MaslowArmOutDiameter"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0165,
+      "y": 0.5800000000000001,
+      "uniqueID": "id-14371",
+      "name": "MaslowArmHeight"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.22707659115426104,
+      "y": 0.2817551963048499,
+      "uniqueID": "id-14377",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 610,
+          "currentEquation": "2 * CenterToArmRadius + MaslowArmOutDiameter"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.28371089536138083,
+      "y": 0.2840646651270208,
+      "uniqueID": "id-14380",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 2,
+          "currentEquation": "MatThick"
+        }
+      ]
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-14377",
+      "ap2ID": "id-14380"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
