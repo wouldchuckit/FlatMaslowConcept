@@ -1420,7 +1420,8 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 10
+          "ioValue": 10,
+          "currentEquation": "MaslowArmInDiameter"
         }
       ]
     }
