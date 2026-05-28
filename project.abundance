@@ -393,8 +393,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.9174757281553397,
-      "y": 0.21016166281755197,
+      "x": 0.8985976267529666,
+      "y": 0.23094688221709006,
       "uniqueID": "id-14449",
       "ioValues": [
         {
@@ -667,8 +667,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.5663430420711973,
-      "y": 0.7505773672055427,
+      "x": 0.5156418554476807,
+      "y": 0.5773672055427251,
       "uniqueID": "id-14500",
       "ioValues": [
         {
@@ -733,8 +733,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.4298813376483279,
-      "y": 0.7875288683602771,
+      "x": 0.4163969795037756,
+      "y": 0.7944572748267898,
       "uniqueID": "id-14516",
       "ioValues": [
         {
@@ -1356,6 +1356,83 @@
           "ioValue": null
         }
       ]
+    },
+    {
+      "atomType": "CutLayout",
+      "x": 0.9546925566343043,
+      "y": 0.8891454965357968,
+      "uniqueID": "id-15862",
+      "name": "Cut Layout",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Sheet Width",
+          "ioValue": 2438
+        },
+        {
+          "name": "Sheet Height",
+          "ioValue": 1219
+        },
+        {
+          "name": "Part Padding",
+          "ioValue": 10
+        },
+        {
+          "name": "Orientations",
+          "ioValue": 4
+        }
+      ],
+      "placements": []
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.5302049622437972,
+      "y": 0.9260969976905312,
+      "uniqueID": "id-15869",
+      "name": "ArmAssembly",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "ArmAssembly"
+      ]
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.7982740021574973,
+      "y": 0.09237875288683603,
+      "uniqueID": "id-15873",
+      "name": "RouterHousing",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "RouterHousing"
+      ]
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.9509169363538296,
+      "y": 0.45265588914549654,
+      "uniqueID": "id-15876",
+      "name": "Extract Tag",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tag": "ArmAssembly",
+      "tagIndex": 0
     },
     {
       "atomType": "GitHubMolecule",
@@ -2354,41 +2431,11 @@
       "lastReloadedFromGithubAt": 1779338741278
     },
     {
-      "atomType": "CutLayout",
-      "x": 0.9525350593311759,
-      "y": 0.8729792147806004,
-      "uniqueID": "id-15862",
-      "name": "Cut Layout",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "Sheet Width",
-          "ioValue": 2438
-        },
-        {
-          "name": "Sheet Height",
-          "ioValue": 1219
-        },
-        {
-          "name": "Part Padding",
-          "ioValue": 10
-        },
-        {
-          "name": "Orientations",
-          "ioValue": 4
-        }
-      ],
-      "placements": []
-    },
-    {
       "atomType": "Tag",
-      "x": 0.5302049622437972,
-      "y": 0.9260969976905312,
-      "uniqueID": "id-15869",
-      "name": "ArmAssembly",
+      "x": 0.3646170442286947,
+      "y": 0.9237875288683602,
+      "uniqueID": "id-16295",
+      "name": "PlasticSheet",
       "ioValues": [
         {
           "name": "geometry",
@@ -2396,15 +2443,15 @@
         }
       ],
       "tags": [
-        "ArmAssembly"
+        "PlasticSheet"
       ]
     },
     {
       "atomType": "Tag",
-      "x": 0.7982740021574973,
-      "y": 0.09237875288683603,
-      "uniqueID": "id-15873",
-      "name": "RouterHousing",
+      "x": 0.564185544768069,
+      "y": 0.5427251732101617,
+      "uniqueID": "id-16298",
+      "name": "PlasticSheet",
       "ioValues": [
         {
           "name": "geometry",
@@ -2412,69 +2459,7 @@
         }
       ],
       "tags": [
-        "RouterHousing"
-      ]
-    },
-    {
-      "atomType": "ExtractTag",
-      "x": 0.9563106796116505,
-      "y": 0.35334872979214776,
-      "uniqueID": "id-15876",
-      "name": "Extract Tag",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tag": "ArmAssembly",
-      "tagIndex": 0
-    },
-    {
-      "atomType": "ExtractTag",
-      "x": 0.9606256742179071,
-      "y": 0.45265588914549654,
-      "uniqueID": "id-15879",
-      "name": "Extract Tag",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ],
-      "tag": "RouterHousing",
-      "tagIndex": 0
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.9590075512405609,
-      "y": 0.5635103926096998,
-      "uniqueID": "id-15882",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": null
-        }
-      ]
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.9546925566343043,
-      "y": 0.7228637413394918,
-      "uniqueID": "id-15887",
-      "ioValues": [
-        {
-          "name": "retain",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "remove",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
+        "PlasticSheet"
       ]
     }
   ],
@@ -2606,16 +2591,6 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-14449",
-      "ap2ID": "id-15879"
-    },
-    {
-      "ap2Name": "retain",
-      "ap1ID": "id-14449",
-      "ap2ID": "id-15887"
-    },
-    {
-      "ap2Name": "geometry",
       "ap1ID": "id-14456",
       "ap2ID": "id-14466"
     },
@@ -2637,7 +2612,7 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-14472",
-      "ap2ID": "id-14516"
+      "ap2ID": "id-16295"
     },
     {
       "ap2Name": "retain",
@@ -2662,7 +2637,7 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-14500",
-      "ap2ID": "id-14527"
+      "ap2ID": "id-16298"
     },
     {
       "ap2Name": "geometry",
@@ -2870,11 +2845,6 @@
       "ap2ID": "id-15873"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-15088",
-      "ap2ID": "id-14494"
-    },
-    {
       "ap2Name": "Shape 5",
       "ap1ID": "id-15869",
       "ap2ID": "id-14500"
@@ -2885,24 +2855,19 @@
       "ap2ID": "id-14449"
     },
     {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-15876",
-      "ap2ID": "id-15882"
-    },
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-15879",
-      "ap2ID": "id-15882"
-    },
-    {
-      "ap2Name": "remove",
-      "ap1ID": "id-15882",
-      "ap2ID": "id-15887"
+      "ap2Name": "geometry",
+      "ap1ID": "id-15088",
+      "ap2ID": "id-14494"
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-15887",
-      "ap2ID": "id-15862"
+      "ap1ID": "id-16295",
+      "ap2ID": "id-14516"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-16298",
+      "ap2ID": "id-14527"
     }
   ],
   "unitsKey": "MM",
