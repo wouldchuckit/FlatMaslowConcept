@@ -1256,6 +1256,108 @@
       ]
     },
     {
+      "atomType": "Rectangle",
+      "x": 0.5172599784250269,
+      "y": 0.10161662817551963,
+      "uniqueID": "id-15454",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 280,
+          "currentEquation": "ToolBayDiameter + 2* CapAndBaseWidth"
+        },
+        {
+          "name": "y length",
+          "ioValue": 60
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.5167206040992448,
+      "y": 0.2424942263279446,
+      "uniqueID": "id-15458",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 69
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5701186623516721,
+      "y": 0.10623556581986143,
+      "uniqueID": "id-15461",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 70
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.6240560949298813,
+      "y": 0.11085450346420322,
+      "uniqueID": "id-15465",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 70
+        },
+        {
+          "name": "zDist",
+          "ioValue": 16,
+          "currentEquation": "8 * MatThick"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5679611650485437,
+      "y": 0.2424942263279446,
+      "uniqueID": "id-15471",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 200
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.6785329018338727,
+      "y": 0.10854503464203233,
+      "uniqueID": "id-15475",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
+    },
+    {
       "atomType": "GitHubMolecule",
       "x": 0.42880258899676377,
       "y": 0.9330254041570438,
@@ -2250,113 +2352,6 @@
       },
       "fileTypeVersion": 1,
       "lastReloadedFromGithubAt": 1779338741278
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.5172599784250269,
-      "y": 0.10161662817551963,
-      "uniqueID": "id-15454",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 280,
-          "currentEquation": "ToolBayDiameter + 2* CapAndBaseWidth"
-        },
-        {
-          "name": "y length",
-          "ioValue": 60,
-          "currentEquation": "60"
-        }
-      ]
-    },
-    {
-      "atomType": "Circle",
-      "x": 0.5167206040992448,
-      "y": 0.2424942263279446,
-      "uniqueID": "id-15458",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 69,
-          "currentEquation": "69"
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.5701186623516721,
-      "y": 0.10623556581986143,
-      "uniqueID": "id-15461",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 70,
-          "currentEquation": "70"
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.6240560949298813,
-      "y": 0.11085450346420322,
-      "uniqueID": "id-15465",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 70,
-          "currentEquation": "70"
-        },
-        {
-          "name": "zDist",
-          "ioValue": 16,
-          "currentEquation": "8 * MatThick"
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.5679611650485437,
-      "y": 0.2424942263279446,
-      "uniqueID": "id-15471",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 200,
-          "currentEquation": "200"
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.6785329018338727,
-      "y": 0.10854503464203233,
-      "uniqueID": "id-15475",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 2",
-          "ioValue": null
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -2707,11 +2702,6 @@
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-15088",
-      "ap2ID": "id-14494"
-    },
-    {
-      "ap2Name": "geometry",
       "ap1ID": "id-15454",
       "ap2ID": "id-15461"
     },
@@ -2739,6 +2729,11 @@
       "ap2Name": "Shape 13",
       "ap1ID": "id-15475",
       "ap2ID": "id-14449"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-15088",
+      "ap2ID": "id-14494"
     }
   ],
   "unitsKey": "MM",
