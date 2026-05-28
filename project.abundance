@@ -393,8 +393,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.8985976267529666,
-      "y": 0.23094688221709006,
+      "x": 0.7934196332254584,
+      "y": 0.2678983833718245,
       "uniqueID": "id-14449",
       "ioValues": [
         {
@@ -414,22 +414,6 @@
           "ioValue": null
         },
         {
-          "name": "Shape 5",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 6",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 7",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 8",
-          "ioValue": null
-        },
-        {
           "name": "Shape 9",
           "ioValue": null
         },
@@ -443,10 +427,6 @@
         },
         {
           "name": "Shape 12",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 13",
           "ioValue": null
         }
       ]
@@ -667,8 +647,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.5156418554476807,
-      "y": 0.5773672055427251,
+      "x": 0.5275080906148868,
+      "y": 0.5658198614318707,
       "uniqueID": "id-14500",
       "ioValues": [
         {
@@ -1421,8 +1401,8 @@
     },
     {
       "atomType": "ExtractTag",
-      "x": 0.9509169363538296,
-      "y": 0.45265588914549654,
+      "x": 0.9519956850053938,
+      "y": 0.535796766743649,
       "uniqueID": "id-15876",
       "name": "Extract Tag",
       "ioValues": [
@@ -1431,7 +1411,7 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
-      "tag": "ArmAssembly",
+      "tag": "PlasticSheet",
       "tagIndex": 0
     },
     {
@@ -2448,9 +2428,57 @@
     },
     {
       "atomType": "Tag",
-      "x": 0.564185544768069,
-      "y": 0.5427251732101617,
+      "x": 0.5647249190938511,
+      "y": 0.48267898383371827,
       "uniqueID": "id-16298",
+      "name": "PlasticSheet",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "PlasticSheet"
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.9196332254584682,
+      "y": 0.2840646651270208,
+      "uniqueID": "id-16301",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 4",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 5",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 6",
+          "ioValue": null
+        }
+      ]
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.8781014023732471,
+      "y": 0.06466512702078522,
+      "uniqueID": "id-16305",
       "name": "PlasticSheet",
       "ioValues": [
         {
@@ -2580,14 +2608,9 @@
       "ap2ID": "id-14663"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-14449",
-      "ap2ID": "id-14028"
-    },
-    {
       "ap2Name": "geometry",
       "ap1ID": "id-14449",
-      "ap2ID": "id-15876"
+      "ap2ID": "id-16305"
     },
     {
       "ap2Name": "geometry",
@@ -2680,9 +2703,9 @@
       "ap2ID": "id-14533"
     },
     {
-      "ap2Name": "Shape 8",
+      "ap2Name": "Shape 3",
       "ap1ID": "id-14527",
-      "ap2ID": "id-14449"
+      "ap2ID": "id-16301"
     },
     {
       "ap2Name": "geometry",
@@ -2710,19 +2733,19 @@
       "ap2ID": "id-14641"
     },
     {
-      "ap2Name": "Shape 5",
+      "ap2Name": "Shape 4",
       "ap1ID": "id-14551",
-      "ap2ID": "id-14449"
+      "ap2ID": "id-16301"
+    },
+    {
+      "ap2Name": "Shape 5",
+      "ap1ID": "id-14557",
+      "ap2ID": "id-16301"
     },
     {
       "ap2Name": "Shape 6",
-      "ap1ID": "id-14557",
-      "ap2ID": "id-14449"
-    },
-    {
-      "ap2Name": "Shape 7",
       "ap1ID": "id-14563",
-      "ap2ID": "id-14449"
+      "ap2ID": "id-16301"
     },
     {
       "ap2Name": "geometry",
@@ -2850,9 +2873,14 @@
       "ap2ID": "id-14500"
     },
     {
-      "ap2Name": "Shape 13",
+      "ap2Name": "Shape 2",
       "ap1ID": "id-15873",
-      "ap2ID": "id-14449"
+      "ap2ID": "id-16301"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-15876",
+      "ap2ID": "id-15862"
     },
     {
       "ap2Name": "geometry",
@@ -2868,6 +2896,21 @@
       "ap2Name": "geometry",
       "ap1ID": "id-16298",
       "ap2ID": "id-14527"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-16301",
+      "ap2ID": "id-15876"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-16301",
+      "ap2ID": "id-14028"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-16305",
+      "ap2ID": "id-16301"
     }
   ],
   "unitsKey": "MM",
